@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/vadhvanadivyang/CI-CD-Pipeline.git'
+        git branch: 'main', url: 'https://github.com/palakbhawsar98/JavaWebApp'
 
       }
     }
@@ -61,7 +61,7 @@ pipeline {
 
    // Push image to DockerHub registry
 
-    stage('Push Image to dockerHUb') {
+    stage('Push Image to dockerHub') {
       steps {
         sh 'docker push divy9696/javawebapp:latest'
       }
